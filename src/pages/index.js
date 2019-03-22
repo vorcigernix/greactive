@@ -11,10 +11,10 @@ const IndexPage = () => (
 
     <nav>
       <ul>
-        <li><a href="/about">About</a></li>
-        <li><a href="/agenda">Agenda</a></li>
-        <li><a href="/mentors">Mentors</a></li>
-        <li><a href="/faq">FAQ</a></li>
+        <li><Link to="/about/">About</Link></li>
+        <li><Link to="/agenda">Agenda</Link></li>
+        <li><Link to="/mentors">Mentors</Link></li>
+        <li><Link to="/faq">FAQ</Link></li>
       </ul>
     </nav>
     <h2>Challenge</h2>
@@ -109,7 +109,7 @@ const IndexPage = () => (
     {/*     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
       <Image />
     </div>
-    <Link to="/page-2/">Go to page 2</Link> */}
+    */}
   </Layout>
 )
 
