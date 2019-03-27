@@ -19,55 +19,38 @@ const IndexPage = () => (
     </nav>
     <h2>Challenge</h2>
     <p>
-      On our first collaboration with ReactiveConf, we made a digression
-      from advanced topics like Machine Learning and Enhanced Realities we
-      had before. Kind of. Your challenge would be to create a perfect
-      website for a non-governmental organization.
-        </p>
+      During our first collaboration with ReactiveConf, we moved away slightly from advanced topics like Machine Learning and Enhanced Realities that we’d previously concentrated on.
+    </p>
+    <cite>
+      This time your challenge is to create a perfect website for a non-governmental organization.
+    </cite>
     <p>
-      Building website is an easy task. Until it isn't. If you add a few
-      more requirements than regular blogging, you are suddendly looking at
-      solution which is expensive to develop. What we want to do on this
-      hackaton is to help NGOs to have a website in similar quality we can
-      afford for ourselves here at Socialbakers.
-        </p>
+      Building websites is an easy task. Until it isn't. If the website has needs more than just a blogging function, you’re suddenly looking at solutions which are expensive to develop. What we want to do at this hackathon is to help NGOs have a website of similar quality to what we have ourselves, here at Socialbakers.
+    </p>
     <p>
-      If you want to prepare, take a look at some NGOs sites and try to
-      figure out their needs. They will benefit from easy page editing for
-      sure, but there might be even more advanced features like donations,
-      shop, SEO, SMO, mailing lists and so on.
-        </p>
+      To prepare, take a look at some NGO websites and try to figure out their needs. They definitely benefit from easy page editing but they might use advanced features too, like donations, shop, SEO, SMO, mailing lists and so on.
+    </p>
     <h2>Rules</h2>
     <p>
-      We will measure (with generally used tools) User Experience and
-        technical parameters of a website. Think of Lighthouse. This will be 30%
-        of a points you can get. Our Mentor will add a personal opinion based on
-        subjective criteria like graphical design, which will account for
-        another 30% of points. These subjective points will be judged from a 15
-        minute pitch of every team at the end of the event. Other 40 percents
-        will be measured from a success of the page on market. Again, details
-        will be explained on the hackathon.
-      </p>
+      We’ll measure the UX and technical parameters of your websites with commonly-used tools like Lighthouse. This part will make up 30% of your final score.
+    </p>
+    <p>
+      Our Mentors will give their personal opinions based on subjective criteria like graphic design, which accounts for the next 30% of your total points. These subjective aspects will be judged during a 15 minute pitch that every team will make at the end of the event.
+    </p>
+    <p>
+      The final 40% of your score will be calculated based upon the success of your webpage on the market. Further details will be given at the hackathon.
+    </p>
     <h2>Prize</h2>
     <p>
-      We’ll be blunt here. If you are in for a money, you are in a wrong
-      place. We are doing this for fun and we want to return the original
-      meaning to the Hackathon events. This is not an easy way to make a money
-      for skilled developers and we are not doing hire-a-thon. That being
-      said, there will be prize that can change a life. Maybe not yours though.
+      We’ll be blunt here. If you’re in it for the money, you’re in the wrong place. We’re doing this for fun and want to bring the original ethos back to the Hackathon events. This is not an easy way to make money for skilled developers and we’re not doing hire-a-thon. That being said, there will be a potentially life-changing prize on offer for somebody.
       </p>
     <h2>Participants</h2>
     <p>
-      You are very motivated and skilled developer, designer or a marketing
-      person. You will be working together in a multidisciplinary team
-      delivering the whole thing on the market. While our mentors work usually
-      in javascript, typescript, python and Sketch, we don’t want to limit
-      your tools to anything specific. This is battle for a net, fight with
-      anything you can use.
+      YYou’re a super-motivated and skilled developer, designer or marketing person. You’ll be working together within a multi-disciplinary team delivering the whole product to the market. While our mentors usually work with javascript, typescript, python and Sketch, we don’t want to limit your tools to anything specific in this battle. Fight with any weapon you have.
     </p>
     <h2>Mentors</h2>
     <p>
-      These people will bootstrap your development and help you to avoid common traps in website development.
+      These good folks will bootstrap your development and help you avoid common traps in website development.
     </p>
 
     <li><img src="https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large" alt="mentor" /><a href="https://jan.vlnas.cz/">Jan Vlnas</a></li>
@@ -78,24 +61,22 @@ const IndexPage = () => (
 
     <ol>
       <li>
-        Apply in the form: We need to balance team abilities, be honest about
-        your capabilities please. Applications will be closed 20th April.
+        Apply in the form: Applications close 20th April
       </li>
       <li>
-        Review process: We will review your application with help of mentors. We
-        will come back to you in a week with results of a review.
+        Review process: we’ll review your application with the help of the mentors and come back to you in a week with our decision
       </li>
       <li>
-        Ticket: If your review is positive, you will get a link to ticket. You
-        need to confirm it within a 7 days limit. Capacity of a venue is
-        limited, please consider seriously your ability to be there with us.
+        Ticket: if you’re selected, you’ll receive a link to your ticket. You need to confirm it strictly within 7 days
+      </li>
+      <li>
+        The capacity of the venue is limited and we need to blend and balance intra-team abilities - so please be totally honest about your capabilities
       </li>
     </ol>
 
     <h2>Venue</h2>
     <p>
-      Hackathon will take place in acclaimed Socialbakers offices in Forum Karlin.
-      With a lot of space, great connectivity and chill out areas, it is one of best places we can have in Prague.
+      The hackathon takes place at the stylistically-acclaimed Socialbakers HQ in Forum Karlin. With its spacious, industrial vibe, great connectivity and chill out areas, it’s one of the most cutting-edge venues in Prague for a hackathon event.
     </p>
     <p>
       Socialbakers a.s. - Fórum Karlín
