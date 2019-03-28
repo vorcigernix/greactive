@@ -20,11 +20,20 @@ const MentorsPage = () => (
     <h2>Mentors</h2>
     <ul>
       <li>
-        Jan Vlnas
-        Jan is experienced hackathon masterblaster.
+        Michal Brašna
+        Michal is a front-end architect at Socialbakers, but his experience goes deeper and we bet he'll be able to answer to any question you might have.
       </li>
       <li>
-        Ondrej Kokes
+        Martin Čižek
+        Martin is a lead architect at Socialbakers. He would be go-to person for any question related to API related functionalities, microservices and systems architecture.
+      </li>
+      <li>
+        Peter Popluhár
+        Peter is skilled in styling related tasks, from basic CSS to styled components. Before you write "!important", it is important to ask him.
+      </li>
+      <li>
+        Jan Čermák
+        Jan is a designer. This is the reight person to ask about user experience and basic design considerations before you start coding. Right design can make a huge difference.
       </li>
     </ul>
     <h2>Team</h2>
