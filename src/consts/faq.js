@@ -5,7 +5,7 @@ export const FAQ = [
 	},
 	{
 		question: 'How long is the hackathon?',
-		answer: 'The hackathon starts on the May 10th at 10am and goes until May 10th, 4:30pm. We expect you to attend the whole hackathon.'
+		answer: 'The hackathon starts on the September 13th at 10am and goes until September 15th, 4:30pm. We expect you to attend the whole hackathon.'
 	},
 	{
 		question: 'On which topic do you focus?',

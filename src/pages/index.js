@@ -16,7 +16,7 @@ const IndexPage = () => (
         <div className='hp-intro-subtitle'>First public hackathon by ReactiveConf and Socialbakers</div>
       </h1>
       <div className='hp-intro-footer'>
-        <div className='hp-intro-date'>11 — 13 May 2019</div>
+        <div className='hp-intro-date'>13 — 15 September 2019</div>
         <div className='hp-intro-link'>Pre-register</div>
         <div className='hp-intro-place'>Prague, Socialbakers offices</div>
       </div>

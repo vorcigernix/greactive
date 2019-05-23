@@ -13,7 +13,7 @@ export default class MobileMenu extends React.Component {
 					<Link className='mobile-menu-nav-item' activeClassName="active" to="/faq">FAQ</Link>
 				</nav>
 				<a className="mobile-menu-link" href="#">Pre-register</a>
-				<div className="mobile-menu-text">11 — 13 May 2019</div>
+				<div className="mobile-menu-text">13 — 15 Sept. 2019</div>
 				<div className="mobile-menu-text">Prague, Socialbakers offices</div>
 			</header>
 		)
