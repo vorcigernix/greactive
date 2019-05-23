@@ -12,8 +12,8 @@ const IndexPage = () => (
 
     <div className='hp-intro'>
       <h1 className='hp-intro-title'>
-        Create a perfect website!
-        <div className='hp-intro-subtitle'>First public hacaton by ReactiveConf and Socialbakers</div>
+        Push the button!
+        <div className='hp-intro-subtitle'>First public hackathon by ReactiveConf and Socialbakers</div>
       </h1>
       <div className='hp-intro-footer'>
         <div className='hp-intro-date'>11 — 13 May 2019</div>
@@ -30,44 +30,31 @@ const IndexPage = () => (
         <Tab className='hp-tabs-btn' tabFor="prize">Prize</Tab>
         <Tab className='hp-tabs-btn' tabFor="participants">Participants</Tab>
       </TabList>
-			<Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="challenge">Challenge</Tab>
+      <Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="challenge">Challenge</Tab>
       <TabPanel tabId="challenge" className='hp-tabs-box'>
         <h3 className='hp-tabs-box-title'>Challenge</h3>
         <p className='basic-text hp-tabs-box-text'>
-          On our first collaboration with ReactiveConf, we made a digression
-          from advanced topics like Machine Learning and Enhanced Realities we
-          had before. Kind of. Your challenge would be to create a perfect
-          website for a non-governmental organization.
+          On our first collaboration with ReactiveConf, we decided to spend our effort on helping others.
         </p>
         <p className='basic-text hp-tabs-box-text'>
-          Building website is an easy task. Until it isn't. If you add a few
-          more requirements than regular blogging, you are suddendly looking at
-          solution which is expensive to develop. What we want to do on this
-          hackaton is to help NGOs to have a website in similar quality we can
-          afford for ourselves here at Socialbakers.
+          We will collaborate with NGOs to solve their problems creative way. Selling newspapers via smartphone application, learning sign language from computer, managing volunteer workforce - these are challenges waiting for your skills.
         </p>
         <p className='basic-text hp-tabs-box-text'>
-          If you want to prepare, take a look at some NGOs sites and try to
-          figure out their needs. They will benefit from easy page editing for
-          sure, but there might be even more advanced features like donations,
-          shop, SEO, SMO, mailing lists and so on.
+          If you want to prepare, take a look at transaction processing, GPS functionality, ML videoprocessing and similar areas. We prefer use of Reactive concepts, would that be React Native, Flutter or PWA is up to you and your team.
         </p>
       </TabPanel>
-			<Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="rules">Competition rules</Tab>
+      <Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="rules">Competition rules</Tab>
       <TabPanel tabId="rules" className='hp-tabs-box'>
         <h3 className='hp-tabs-box-title'>Rules</h3>
         <p className='basic-text hp-tabs-box-text'>
-          We will measure (with generally used tools) User Experience and
-          technical parameters of a website. Think of Lighthouse. This will be 30%
-          of a points you can get. Our Mentor will add a personal opinion based on
+          Our Mentor will add a personal opinion based on
           subjective criteria like graphical design, which will account for
-          another 30% of points. These subjective points will be judged from a 15
-          minute pitch of every team at the end of the event. Other 40 percents
-          will be measured from a success of the page on market. Again, details
-          will be explained on the hackathon.
+          30% of points. These subjective points will be judged from a 15
+          minute pitch of every team at the end of the event. Other 70 percents
+          will be based on peer voting - you will have a three votes as a team you can spend on any competing team except yours.
         </p>
       </TabPanel>
-			<Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="prize">Prize</Tab>
+      <Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="prize">Prize</Tab>
       <TabPanel tabId="prize" className='hp-tabs-box'>
         <h3 className='hp-tabs-box-title'>Prize</h3>
         <p className='basic-text hp-tabs-box-text'>
@@ -78,32 +65,30 @@ const IndexPage = () => (
           said, there will be prize that can change a life. Maybe not yours though.
         </p>
       </TabPanel>
-			<Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="participants">Participants</Tab>
+      <Tab className='hp-tabs-btn hp-tabs-btn--single' tabFor="participants">Participants</Tab>
       <TabPanel tabId="participants" className='hp-tabs-box'>
         <h3 className='hp-tabs-box-title'>Participants</h3>
         <p className='basic-text hp-tabs-box-text'>
-          You are very motivated and skilled developer, designer or a marketing
-          person. You will be working together in a multidisciplinary team
+          You are very motivated and skilled developer or designer. You will be working together in a multidisciplinary team
           delivering the whole thing on the market. While our mentors work usually
           in javascript, typescript, python and Sketch, we don’t want to limit
-          your tools to anything specific. This is battle for a net, fight with
-          anything you can use.
+          your tools to anything specific. 
         </p>
       </TabPanel>
     </Tabs>
     <div className='mentors container'>
       <div className='mentors-wrapper'>
-				<Mentor
-					link={'https://jan.vlnas.cz/'}
-					name={'Jan Vlnas'}
-					img={'https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large'}
-					description={'Experienced hackathon masterblaster'}
-				/>
-				<Mentor
-					link={'https://github.com/kokes'}
-					name={'Ondrej Kokes'}
-					img={'https://avatars2.githubusercontent.com/u/8451755?s=460&v=4'}
-					description={'Ideation & Pitch Preparation'} />
+        <Mentor
+          link={'https://jan.vlnas.cz/'}
+          name={'Jan Vlnas'}
+          img={'https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large'}
+          description={'Experienced hackathon masterblaster'}
+        />
+        <Mentor
+          link={'https://github.com/kokes'}
+          name={'Ondrej Kokes'}
+          img={'https://avatars2.githubusercontent.com/u/8451755?s=460&v=4'}
+          description={'Ideation & Pitch Preparation'} />
       </div>
       <div className='mentors-info'>
         <h2 className='mentors-info-title section-title'>Mentors</h2>
@@ -138,7 +123,7 @@ const IndexPage = () => (
           Hackathon will take place in acclaimed Socialbakers offices in Forum Karlin.
           With a lot of space, great connectivity and chill out areas, it is one of best places we can have in Prague.
         </p>
-        <svg className='venue-map-icon' width="56" height="54" xmlns="http://www.w3.org/2000/svg"><g stroke="#FAA" strokeWidth="2" fill="none" fillRule="evenodd" strokeLinecap="round"><path d="M15 23.502H5l-3.655 29h52.769l-3.114-29H41"/><path d="M38.788 10.673c-.525-3.999-2.615-9.181-10.822-9.181-8.208 0-10.298 5.182-10.822 9.181-.288 2.192-.127 4.419.33 6.583 2.508 11.892 8.709 19.022 10.177 20.576a.43.43 0 0 0 .63 0c1.467-1.554 7.668-8.684 10.177-20.576.456-2.164.617-4.391.33-6.583z"/><path d="M34.311 12.068a6.346 6.346 0 1 1-6.345-6.346 6.346 6.346 0 0 1 6.345 6.346z"/><path d="M42.795 28.441c1.165-.328 2.471-.249 3.514.367 1.043.615 1.767 1.801 1.685 3.009-.064.939-.576 1.784-1.113 2.557-.392.563-.814 1.121-1.375 1.516-.834.587-1.886.753-2.9.856-2.667.272-5.358.218-8.026.48s-5.368.868-7.617 2.327c-1.045.677-1.968 1.522-2.937 2.304a28.852 28.852 0 0 1-9.627 5.137c-1.108.34-2.268.613-3.418.469-1.15-.143-2.297-.775-2.782-1.827-.258-.561-.313-1.195-.283-1.812.107-2.196 1.587-4.498 3.773-4.739.629-.069 1.323.062 1.749.529" strokeDasharray="3"/></g></svg>
+        <svg className='venue-map-icon' width="56" height="54" xmlns="http://www.w3.org/2000/svg"><g stroke="#FAA" strokeWidth="2" fill="none" fillRule="evenodd" strokeLinecap="round"><path d="M15 23.502H5l-3.655 29h52.769l-3.114-29H41" /><path d="M38.788 10.673c-.525-3.999-2.615-9.181-10.822-9.181-8.208 0-10.298 5.182-10.822 9.181-.288 2.192-.127 4.419.33 6.583 2.508 11.892 8.709 19.022 10.177 20.576a.43.43 0 0 0 .63 0c1.467-1.554 7.668-8.684 10.177-20.576.456-2.164.617-4.391.33-6.583z" /><path d="M34.311 12.068a6.346 6.346 0 1 1-6.345-6.346 6.346 6.346 0 0 1 6.345 6.346z" /><path d="M42.795 28.441c1.165-.328 2.471-.249 3.514.367 1.043.615 1.767 1.801 1.685 3.009-.064.939-.576 1.784-1.113 2.557-.392.563-.814 1.121-1.375 1.516-.834.587-1.886.753-2.9.856-2.667.272-5.358.218-8.026.48s-5.368.868-7.617 2.327c-1.045.677-1.968 1.522-2.937 2.304a28.852 28.852 0 0 1-9.627 5.137c-1.108.34-2.268.613-3.418.469-1.15-.143-2.297-.775-2.782-1.827-.258-.561-.313-1.195-.283-1.812.107-2.196 1.587-4.498 3.773-4.739.629-.069 1.323.062 1.749.529" strokeDasharray="3" /></g></svg>
         <div className='venue-adress'>
           <div className='venue-sbks-title'>Socialbakers a.s. - Fórum Karlín</div>
           Pernerova 53, Prague 8 - Karlín

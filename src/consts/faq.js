@@ -1,7 +1,7 @@
 export const FAQ = [
 	{
 		question: 'Do I need an level of experience?',
-		answer: 'Yes. You should be able to write a code somewhere beyond "hello world" in a language of your choosing. If you are a designer or marketer, we expect some degree of experience in your area.'
+		answer: 'Yes. You should be able to write a code somewhere beyond "hello world" in a language of your choosing. If you are a designer, we expect some degree of experience in your area.'
 	},
 	{
 		question: 'How long is the hackathon?',
@@ -9,15 +9,15 @@ export const FAQ = [
 	},
 	{
 		question: 'On which topic do you focus?',
-		answer: 'We will be building a website. Your aim would be to make a perfect website for purpose we will share on the beginning. Be prepared for advanced issues like a payment solution, SEO optimization, social network sharing and so on.'
+		answer: 'We will be building a smartphone application. Result should be completely functional application, which can be demonstrated on Android phone.'
 	},
 	{
 		question: 'How can I prepare?',
-		answer: 'Get some idea on modern web technologies. We recommend reading articles from companies like Netflix, Google and Facebook about current status of technology.'
+		answer: 'Take a look on the technologies you can use to build applications. Also, think about topics like transactions and machine learning and try to find some easy to use libraries for that.'
 	},
 	{
 		question: 'Who are the judges for the hackathon?',
-		answer: 'The Mentors and the market. We don\'t want to share a methodology for assessment in advance, but real application of the site would make a big difference.'
+		answer: 'The Mentors and you. You as a team will have 3 votes you can spend on any competing project and this will decide 70% of judgement.'
 	},
 	{
 		question: 'What is the event language?',
