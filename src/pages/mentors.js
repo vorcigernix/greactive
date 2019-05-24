@@ -3,44 +3,69 @@ import React from "react"
 import SubPageIntro from '../components/sub-page-intro'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Mentor from "../components/mentor"
 
-const MentorsPage = () => (
+const MentorsPage = ({ data }) => (
   <Layout>
     <SEO title="Reactive|Hacks" keywords={[`hackathon`, `NGO`, `react`, `social`]} />
 
     {SubPageIntro('Mentors')}
     <div className='mentors-page container'>
       <div className='mentorsWrapper'>
-        <div className='mentor'>
-          <div className='mentor-imgWrapper'><img className='mentor-img' src="https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large" alt="mentor" /></div>
-          <a className='mentor-name' href="https://jan.vlnas.cz/">Jan Vlnas</a>
-          <div className='mentor-description'>Experienced hackathon masterblaster</div>
-        </div>
-        <div className='mentor'>
-          <div className='mentor-imgWrapper'><img className='mentor-img' src="https://avatars2.githubusercontent.com/u/8451755?s=460&v=4" alt="mentor" /></div>
-          <a className='mentor-name' href="https://github.com/kokes">Ondrej Kokes</a>
-          <div className='mentor-description'>Ideation & Pitch Preparation</div>
-        </div>
+        <Mentor
+          link={'https://jan.vlnas.cz/'}
+          name={'Jan Vlnas'}
+          img={data.vlnas.childImageSharp.fixed}
+          description={'Experienced hackathon masterblaster'}
+        />
+        <Mentor
+          link={'https://jan.vlnas.cz/'}
+          name={'Jan Vlnas'}
+          img={data.vlnas.childImageSharp.fixed}
+          description={'Experienced hackathon masterblaster'}
+        />
       </div>
       <div className='mentorsWrapper'>
-        <div className='mentor mentor--inverse'>
-          <div className='mentor-imgWrapper'><img className='mentor-img' src="https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large" alt="mentor" /></div>
-          <a className='mentor-name' href="https://jan.vlnas.cz/">Jan Vlnas</a>
-          <div className='mentor-description'>Experienced hackathon masterblaster</div>
-        </div>
-        <div className='mentor mentor--inverse'>
-          <div className='mentor-imgWrapper'><img className='mentor-img' src="https://avatars2.githubusercontent.com/u/8451755?s=460&v=4" alt="mentor" /></div>
-          <a className='mentor-name' href="https://github.com/kokes">Ondrej Kokes</a>
-          <div className='mentor-description'>Ideation & Pitch Preparation</div>
-        </div>
-        <div className='mentor mentor--inverse'>
-          <div className='mentor-imgWrapper'><img className='mentor-img' src="https://d2cmuesa4snpwn.cloudfront.net/public/427478639/large" alt="mentor" /></div>
-          <a className='mentor-name' href="https://jan.vlnas.cz/">Jan Vlnas</a>
-          <div className='mentor-description'>Experienced hackathon masterblaster</div>
-        </div>
+        <Mentor
+          link={'https://github.com/kokes'}
+          name={'Ondrej Kokes'}
+          img={data.kokes.childImageSharp.fixed}
+          description={'Ideation & Pitch Preparation'}
+          inverse />
+        <Mentor
+          link={'https://github.com/kokes'}
+          name={'Ondrej Kokes'}
+          img={data.kokes.childImageSharp.fixed}
+          description={'Ideation & Pitch Preparation'}
+          inverse />
+        <Mentor
+          link={'https://github.com/kokes'}
+          name={'Ondrej Kokes'}
+          img={data.kokes.childImageSharp.fixed}
+          description={'Ideation & Pitch Preparation'}
+          inverse />
       </div>
     </div>
   </Layout>
 )
 
 export default MentorsPage
+
+export const query = graphql`
+  query {
+    kokes: file(relativePath: { eq: "kokes.jpg"}) {
+      childImageSharp {
+        fixed(width: 304, height: 360) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+    vlnas: file(relativePath: { eq: "vlnas.jpg"}) {
+      childImageSharp {
+        fixed(width: 304, height: 360) {
+          ...GatsbyImageSharpFixed
+        }
+      }
+    }
+  }
+`

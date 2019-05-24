@@ -1,4 +1,5 @@
 import React from "react"
+import Icon from './icon'
 
 export default class AgendaItem extends React.Component {
 	render () {
@@ -7,7 +8,7 @@ export default class AgendaItem extends React.Component {
 		return (
 			<div className='agenda-item'>
 				<div className='agenda-item-time basic-text'>{time}</div>
-				{icon}
+				<div className='agenda-item-icon-wrapper'><Icon src={icon} className='agenda-item-icon' /></div>
 				<div className='agenda-item-activity basic-text'>{activity}</div>
             </div>
 		)

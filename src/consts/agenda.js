@@ -1,73 +1,88 @@
+import announcementIcon from '../images/announcement.svg'
+import barCampsIcon from '../images/bar-camps.svg'
+import breakfastIcon from '../images/breakfast.svg'
+import chilloutIcon from '../images/chillout.svg'
+import dinnerIcon from '../images/dinner.svg'
+import getTogetherIcon from '../images/get-together.svg'
+import ideasIcon from '../images/ideas.svg'
+import interestMeetIcon from '../images/interest-meet.svg'
+import midnightIcon from '../images/midnight.svg'
+import openingCeremonyIcon from '../images/opening-ceremony.svg'
+import startIcon from '../images/start.svg'
+import submitIcon from '../images/submit.svg'
+import winningCeremonyIcon from '../images/winning-ceremony.svg'
+import workshopIcon from '../images/workshop.svg'
+
 export const AGENDA = {
 	friday: [
 		{
 			time: '3:00pm - 3:45pm',
 			activity: 'Opening Ceremony',
-			icon: '',
+			icon: openingCeremonyIcon,
 		},
 		{
 			time: '3:45pm - 4:30pm',
 			activity: 'Ideation & Pitch Preparation',
-			icon: '',
+			icon: ideasIcon,
 		},
 		{
 			time: '4:30pm - 6:30pm',
 			activity: 'Bar Camps',
-			icon: '',
+			icon: barCampsIcon,
 		},
 		{
 			time: '6:30pm - 7:30pm',
 			activity: 'Dinner',
-			icon: '',
+			icon: dinnerIcon,
 		},
 		{
 			time: '7:30pm - 8:30pm',
 			activity: 'Interest meetings',
-			icon: '',
+			icon: interestMeetIcon,
 		},
 		{
 			time: '8:30pm - 12:00pm',
 			activity: 'Get-together &amp; activities',
-			icon: '',
+			icon: getTogetherIcon,
 		}
 	],
 	saturday: [
 		{
 			time: '9:00am - 10:00am',
 			activity: 'Breakfast',
-			icon: '',
+			icon: breakfastIcon,
 		},
 		{
 			time: '10:00am - 12:00am',
 			activity: 'Workshops',
-			icon: '',
+			icon: workshopIcon,
 		},
 		{
 			time: '12:00pm - 12:55pm',
 			activity: 'Lunch',
-			icon: '',
+			icon: dinnerIcon,
 		},
 		{
 			time: '12:55pm - 1:00pm',
 			activity: 'Start of Hackathon',
-			icon: '',
+			icon: startIcon,
 		},
 		{
 			time: '1:00pm',
 			activity: 'Hacking begins',
-			icon: '',
+			icon: barCampsIcon,
 		},
 		{
 			time: '6:30pm - 7:30pm',
 			activity: 'Dinners',
-			icon: '',
+			icon: dinnerIcon,
 		}
 	],
 	sunday: [
 		{
 			time: '0:00am',
 			activity: 'Midnight Snack',
-			icon: '',
+			icon: midnightIcon,
 		},
 		{
 			time: '01:00am - 01:30am',
@@ -77,27 +92,27 @@ export const AGENDA = {
 		{
 			time: '9:00am - 10:00am',
 			activity: 'Breakfast',
-			icon: '',
+			icon: breakfastIcon,
 		},
 		{
 			time: '10:00pm - 10:15pm',
 			activity: 'Morning Announcements',
-			icon: '',
+			icon: announcementIcon,
 		},
 		{
 			time: '12:30pm - 1:00pm',
 			activity: 'Submit projects',
-			icon: '',
+			icon: submitIcon,
 		},
 		{
 			time: '1:00pm',
 			activity: 'Deadline',
-			icon: '',
+			icon: startIcon,
 		},
 		{
 			time: '1:00pm - 1:45pm',
 			activity: 'Lunch',
-			icon: '',
+			icon: dinnerIcon,
 		},
 		{
 			time: '1:45pm - 2:15pm',
@@ -112,12 +127,12 @@ export const AGENDA = {
 		{
 			time: '3:15pm - 3:45pm',
 			activity: 'Winning Ceremony + Wrapping up',
-			icon: '',
+			icon: winningCeremonyIcon,
 		},
 		{
 			time: '3:45pm - 4:30pm',
 			activity: 'Chill-Out',
-			icon: '',
+			icon: chilloutIcon,
 		},
 	]
 }
