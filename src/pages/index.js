@@ -8,8 +8,12 @@ import SEO from "../components/seo"
 import Mentor from "../components/mentor"
 import Icon from '../components/icon'
 
-import hpIntroTitleTopIcon from '../images/hp-intro-title-top.svg'
-import hpIntroTitleBottomIcon from '../images/hp-intro-title-bottom.svg'
+import reactiveLogo from '../images/reactive-logo.svg'
+import sbksLogo from '../images/sbks-logo.svg'
+import hpIntroMainIcon from '../images/hp-main-visual.svg'
+import hpIntroTopLeftIcon from '../images/hp-intro-top-left-visual.svg'
+import hpIntroBottomLeftIcon from '../images/hp-intro-bottom-left-visual.svg'
+import hpIntroBottomRightIcon from '../images/hp-intro-bottom-right-visual.svg'
 import hpTabsBoxLeft from '../images/tabs-box-left.svg'
 import hpTabsBoxRight from '../images/tabs-box-right.svg'
 import appProcessApplyIcon from '../images/appProcess-apply.svg'
@@ -23,17 +27,37 @@ const IndexPage = ({ data }) => (
     <SEO title="Reactive|Hacks" keywords={[`hackathon`, `NGO`, `react`, `social`]} />
 
     <div className='hp-intro'>
+      <Icon src={hpIntroTopLeftIcon} className='hp-intro-top-left-icon' />
       <h1 className='hp-intro-title'>
-        <Icon src={hpIntroTitleTopIcon} className='hp-intro-title-top' />
         Push the button!
-        <div className='hp-intro-subtitle'>First public hackathon by ReactiveConf and Socialbakers</div>
-        <Icon src={hpIntroTitleBottomIcon} className='hp-intro-title-bottom' />
+        <div className='hp-intro-subtitle'>First public hackathon by <Icon src={reactiveLogo} className='hp-intro-reactive'/> & <Icon src={sbksLogo} className="hp-intro-sbks" /></div>
+        <Icon src={hpIntroMainIcon} className='hp-intro-main-icon' />
       </h1>
-      <div className='hp-intro-footer'>
+      <div className='hp-intro-info'>
         <div className='hp-intro-date'>13 — 15 September 2019</div>
-        <div className='hp-intro-link'>Pre-register</div>
         <div className='hp-intro-place'>Prague, Socialbakers offices</div>
+        <div className='hp-intro-link'>Pre-register</div>
       </div>
+      <div className="hp-intro-numbers">
+        <div className="hp-intro-numbers-box">
+          <div className="hp-intro-numbers-number">3</div>
+          <div className="hp-intro-numbers-title">Days</div>
+        </div>
+        <div className="hp-intro-numbers-box">
+          <div className="hp-intro-numbers-number">12</div>
+          <div className="hp-intro-numbers-title">Mentors</div>
+        </div>
+        <div className="hp-intro-numbers-box">
+          <div className="hp-intro-numbers-number">139</div>
+          <div className="hp-intro-numbers-title">Participants</div>
+        </div>
+        <div className="hp-intro-numbers-box">
+          <div className="hp-intro-numbers-number">1</div>
+          <div className="hp-intro-numbers-title">Winner</div>
+        </div>
+      </div>
+      <Icon src={hpIntroBottomLeftIcon} className='hp-intro-bottom-left-icon' />
+      <Icon src={hpIntroBottomRightIcon} className='hp-intro-bottom-right-icon' />
     </div>
     <Tabs
       defaultTab="challenge"
@@ -99,17 +123,17 @@ const IndexPage = ({ data }) => (
       </TabPanel>
     </Tabs>
     <div className='mentors container'>
-      <div className='mentors-wrapper'>
+      <div className='mentors-wrapper mentors-wrapper--hp'>
         <Mentor
           link={'https://jan.vlnas.cz/'}
           name={'Jan Vlnas'}
-          img={data.vlnas.childImageSharp.fixed}
+          img={data.vlnas.childImageSharp.fluid}
           description={'Experienced hackathon masterblaster'}
         />
         <Mentor
           link={'https://github.com/kokes'}
           name={'Ondrej Kokes'}
-          img={data.kokes.childImageSharp.fixed}
+          img={data.kokes.childImageSharp.fluid}
           description={'Ideation & Pitch Preparation'} />
       </div>
       <div className='mentors-info'>
@@ -120,26 +144,26 @@ const IndexPage = ({ data }) => (
         <Link className='mentors-info-link' to={'/mentors'}>Meet our team</Link>
       </div>
     </div>
-    <div className='appProcess'>
-      <h2 className='appProcess-title'>Application process:</h2>
-      <div className='appProcess-steps'>
-        <div className='appProcess-item appProcess-item--apply'>
-          <Icon src={appProcessApplyIcon} className='appProcess-item-background' />
-          <h3 className='appProcess-item-title'>Apply in the form</h3>
-          <p className='appProcess-item-text basic-text'>We need to balance team abilities, be honest about your capabilities please. Applications will be closed 20th April.</p>
+    <div className='application'>
+      <h2 className='application-title'>Application process:</h2>
+      <div className='application-steps'>
+        <div className='application-item application-item--apply'>
+          <Icon src={appProcessApplyIcon} className='application-item-background' />
+          <h3 className='application-item-title'>Apply in the form</h3>
+          <p className='application-item-text basic-text'>We need to balance team abilities, be honest about your capabilities please. Applications will be closed 20th April.</p>
         </div>
-        <div className='appProcess-item appProcess-item--process'>
-          <Icon src={appProcessProcessIcon} className='appProcess-item-background' />
-          <h3 className='appProcess-item-title'>Review process</h3>
-          <p className='appProcess-item-text basic-text'>We will review your application with help of mentors. We will come back to you in a week with results of a review.</p>
+        <div className='application-item application-item--process'>
+          <Icon src={appProcessProcessIcon} className='application-item-background' />
+          <h3 className='application-item-title'>Review process</h3>
+          <p className='application-item-text basic-text'>We will review your application with help of mentors. We will come back to you in a week with results of a review.</p>
         </div>
-        <div className='appProcess-item appProcess-item--ticket'>
-          <Icon src={appProcessTicketIcon} className='appProcess-item-background' />
-          <h3 className='appProcess-item-title'>Ticket</h3>
-          <p className='appProcess-item-text basic-text'>If your review is positive, you will get a link to ticket. You need to confirm it within a 7 days limit. Capacity of a venue is limited, please consider seriously your ability to be there with us.</p>
+        <div className='application-item application-item--ticket'>
+          <Icon src={appProcessTicketIcon} className='application-item-background' />
+          <h3 className='application-item-title'>Ticket</h3>
+          <p className='application-item-text basic-text'>If your review is positive, you will get a link to ticket. You need to confirm it within a 7 days limit. Capacity of a venue is limited, please consider seriously your ability to be there with us.</p>
         </div>
       </div>
-      <a className='appProcess-link' href='#'>Pre-register</a>
+      <a className='application-link' href='#'>Pre-register</a>
     </div>
     <div className='venue container'>
       <div className='venue-img'>
@@ -176,15 +200,15 @@ export const query = graphql`
     }
     kokes: file(relativePath: { eq: "kokes.jpg"}) {
       childImageSharp {
-        fixed(width: 304, height: 360) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 304, maxHeight: 360) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     vlnas: file(relativePath: { eq: "vlnas.jpg"}) {
       childImageSharp {
-        fixed(width: 304, height: 360) {
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 304, maxHeight: 360) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

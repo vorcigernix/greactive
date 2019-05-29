@@ -1,0 +1,188 @@
+@import (reference) './variables.less';
+
+.footer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+    margin: 192px 50px 50px;
+    padding: 80px 20px;
+    background: @cl-secondary;
+    color: @cl-primary;
+	text-align: center;
+}
+
+.footer-block {
+	flex: 0 0 448px;
+	height: 192px;
+	text-align: left;
+
+	+ .footer-block {
+		margin-left: 32px;
+	}
+}
+
+.footer-left {
+	position: absolute;
+	bottom: -50px;
+	left: -50px;
+	width: 306px;
+	height: 425px;
+}
+
+.footer-right {
+	position: absolute;
+	bottom: -50px;
+	right: -50px;
+	background-size: cover;
+	width: 308px;
+	height: 385px;
+}
+
+.footer-mobile-left,
+.footer-mobile-right {
+	display: none;
+}
+
+.footer-title {
+    margin-bottom: 16px;
+    font-family: 'Montserrat';
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.footer-text {
+	display: flex;
+	align-items: center;
+	margin-bottom: 24px;
+	max-width: 380px;
+    font-size: 15px;
+	line-height: 32px;
+	color: #FFFFFF;
+}
+
+.footer-sbks-logo {
+	margin-bottom: -9px;
+	margin-left: 18px;
+	width: 150px;
+	height: 40px;
+}
+
+.footer-email {
+    display: inline-block;
+    border-bottom: 4px solid @cl-primary;
+    font-family: 'Merriweather';
+    font-size: 15px;
+    line-height: 46px;
+    color: @cl-primary;
+	text-decoration: none;
+	transition: border-color .25s;
+	
+	&:hover {
+		border-bottom-color: transparent;
+	}
+}
+
+.footer-become-btn {
+	display: inline-block;
+	margin-top: 36px;
+	border: 2px solid @cl-primary;
+	height: 40px;
+	width: 225px;
+	font-family: 'Montserrat';
+	line-height: 36px;
+	text-decoration: none;
+	text-align: center;
+	color: @cl-primary;
+	font-size: 15px;
+	font-weight: 700;
+	text-transform: uppercase;
+	transition: background .25s, color .25s;
+
+	&:hover {
+		background: @cl-primary;
+		color: @cl-secondary;
+	}
+}
+
+@media screen and (max-width: 1620px) {
+	.footer-left {
+		left: -144px;
+	}
+}
+
+@media screen and (max-width: 1430px) {
+	.footer-left {
+		left: -214px;
+	}
+}
+
+@media screen and (max-width: 1240px) {
+	.footer-left {
+		top: -28px;
+		bottom: unset;
+	}
+
+	.footer-block {
+		flex: 0 0 100%;
+		text-align: center;
+
+		+ .footer-block {
+			margin-top: 36px;
+			margin-left: 0;
+		}
+	}
+
+	.footer-text {
+		margin: 0 auto;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+    .footer {
+        margin-left: 0;
+        margin-right: 0;
+        border-left: 16px solid #FFFFFF;
+        border-right: 16px solid #FFFFFF;
+    }
+    
+    .footer-left,
+    .footer-right {
+        display: none;
+    }
+
+    .footer-mobile-left {
+        position: absolute;
+        top: -28px;
+        left: -229px;
+        display: block;
+        width: 306px;
+        height: 306px;
+    }
+
+    .footer-mobile-right {
+        position: absolute;
+        bottom: -50px;
+        right: -16px;
+        display: block;
+        width: 112px;
+        height: 145px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+	.footer {
+		margin-top: 72px;
+	}
+
+	.footer-text {
+		display: block;
+	}
+
+	.footer-sbks-logo {
+		display: block;
+		margin: 12px auto 0;
+	}
+}

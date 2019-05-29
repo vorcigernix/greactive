@@ -1,5 +1,5 @@
 import React from "react"
-import SubPageIntro from '../components/sub-page-intro'
+import PageIntro from '../components/page-intro'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import FaqItem from '../components/faq-item'
@@ -11,7 +11,7 @@ export default class FaqPage extends React.Component {
 			<Layout>
 				<SEO title="Reactive|Hacks" keywords={[`hackathon`, `NGO`, `react`, `social`]} />
 
-				{SubPageIntro('FAQ')}
+				{PageIntro('FAQ')}
 
 				<div className='faq'>
 					{FAQ.map((i) => {

@@ -7,7 +7,7 @@ export default class Mentor extends React.Component {
 		return (
 			<div className={classnames('mentor', {'mentor--inverse': this.props.inverse})}>
 				<div className='mentor-imgWrapper'>
-					<Img fixed={this.props.img} />
+					<Img fluid={this.props.img} />
 				</div>
 				<a className='mentor-name' href={this.props.link}>{this.props.name}</a>
 				<div className='mentor-description'>{this.props.description}</div>

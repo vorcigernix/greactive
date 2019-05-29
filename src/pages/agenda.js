@@ -1,7 +1,7 @@
 import React from "react"
 import { Tabs, Tab, TabPanel, TabList } from 'react-web-tabs';
 
-import SubPageIntro from '../components/sub-page-intro'
+import PageIntro from '../components/page-intro'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import AgendaItem from '../components/agenda-item'
@@ -11,7 +11,7 @@ const AgendaPage = () => (
   <Layout>
     <SEO title="Reactive|Hacks" keywords={[`hackathon`, `NGO`, `react`, `social`]} />
 
-    {SubPageIntro('Agenda')}
+    {PageIntro('Agenda')}
     <div className='agenda'>
       <Tabs defaultTab="friday">
         <TabList className='agenda-tabs desktop'>

@@ -1,0 +1,262 @@
+@import (reference) './variables.less';
+
+.header {
+    position: absolute;
+    top: 40px;
+    left: 48px;
+    right: 48px;
+    height: 40px;
+    z-index: 10;
+}
+
+.header-nav {
+    float: left;
+}
+
+.header-nav-item {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 40px;
+    color: @cl-primary;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color .25s, border .25s;
+
+    &:hover {
+        color: #FFFFFF;
+        border-bottom: 8px solid @cl-secondary;
+    }
+
+    &.active {
+        border-bottom: 8px solid @cl-secondary;
+        color: #FFFFFF;
+        cursor: default;
+    }
+}
+
+.header-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    width: 171px;
+    height: 24px;
+    z-index: 20;
+}
+
+.header-logo-icon {
+    width: 100%;
+    height: 100%;
+}
+
+.header-preorder {
+    display: inline-block;
+    float: right;
+    border: 2px solid @cl-primary;
+    height: 40px;
+    width: 172px;
+    background: #080533;
+    font-family: 'Montserrat';
+    line-height: 36px;
+    text-decoration: none;
+    text-align: center;
+    color: @cl-primary;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: color .25s, border-color .25s;
+
+    &:hover {
+        color: @cl-secondary;
+        border-color: @cl-secondary;
+    }
+}
+
+.m-header-hamburger {
+    display: none;
+    position: absolute;
+    top: 28px;
+    right: 16px;
+    width: 25px;
+    height: 21px;
+    z-index: 20;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: @cl-primary;
+    }
+
+    &:before {
+        top: 0;
+    }
+
+    &:after {
+        bottom: 0;
+    }
+
+    &.isOpen {
+        &:before,
+        &:after {
+            display: none;
+        }
+
+        .m-header-hamburger-inner {
+            transform: rotate(45deg);
+
+            &:before {
+                transform: rotate(-90deg);
+            }
+        }
+    }
+}
+
+.m-header-hamburger-inner {
+    position: absolute;
+    left: 0;
+    top: 9px;
+    width: 100%;
+    height: 3px;
+    background: @cl-primary;
+    transition: transform .25s;
+    z-index: 10;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @cl-primary;
+        transition: transform .25s;
+    }
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: @cl-primary;
+        transition: transform .25s;
+    }
+}
+
+.m-header-info {
+    display: none;
+}
+
+.mobile-menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	padding-bottom: 24px;
+	background: linear-gradient(-45deg, #070531, #0D0953, #0C065D, #070531);
+	text-align: center;
+
+	&.isOpen {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.mobile-menu-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 30px 0;
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+.mobile-menu-nav-item {
+    margin-bottom: 20px;
+    width: 100%;
+    font-family: 'Montserrat';
+    color: @cl-primary;
+    line-height: 44px;
+    text-decoration: none;
+    font-size: 23px;
+    font-weight: 700;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &.active {
+        color: #FFFFFF;
+    }
+}
+
+.mobile-menu-link {
+    display: inline-block;
+    margin-bottom: 12px;
+    width: 208px;
+    background: @cl-primary;
+    font-family: 'Montserrat';
+    line-height: 48px;
+    font-size: 19px;
+    font-weight: 700;
+    color: #0B0658;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.mobile-menu-text {
+    font-family: 'Montserrat';
+    color: @cl-primary;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1100px) {
+	.header {
+		left: 0;
+		right: 0;
+		top: 0;
+
+		&.fixed {
+			position: fixed;
+			z-index: 30;
+		}
+	}
+
+	.header-logo {
+		left: 16px;
+		top: 28px;
+		width: 148px;
+		height: 21px;
+		transform: none;
+	}
+
+	.header-nav,
+	.header-preorder {
+		display: none;
+	}
+
+    .m-header-hamburger {
+        display: block;
+    }
+
+    .m-header-info {
+        display: block;
+	}
+}
