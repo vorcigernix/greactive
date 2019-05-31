@@ -29,7 +29,7 @@ const IndexPage = ({ data }) => (
     <div className='hp-intro'>
       <Icon src={hpIntroTopLeftIcon} className='hp-intro-top-left-icon' />
       <h1 className='hp-intro-title'>
-        Push the button!
+        Refactor the World
         <div className='hp-intro-subtitle'>First public hackathon by <Icon src={reactiveLogo} className='hp-intro-reactive'/> & <Icon src={sbksLogo} className="hp-intro-sbks" /></div>
         <Icon src={hpIntroMainIcon} className='hp-intro-main-icon' />
       </h1>
@@ -125,15 +125,13 @@ const IndexPage = ({ data }) => (
     <div className='mentors container'>
       <div className='mentors-wrapper mentors-wrapper--hp'>
         <Mentor
-          link={'https://jan.vlnas.cz/'}
-          name={'Jan Vlnas'}
-          img={data.vlnas.childImageSharp.fluid}
-          description={'Experienced hackathon masterblaster'}
+          name={'Alberto Silva'}
+          img={data.alberto.childImageSharp.fluid}
+          description={'In these years working as developers, I have understood that there is no silver bullet when talking about tools or technologies. If you know me, you are gonna here: Javascript is my amazing thing; Agile manifesto should be remembered every day while working; Let\'s write tests please; Don\'t write to much code under frameworks; Learn techniques before tools.'}
         />
         <Mentor
-          link={'https://github.com/kokes'}
-          name={'Ondrej Kokes'}
-          img={data.kokes.childImageSharp.fluid}
+          name={'Johny Velho'}
+          img={data.johny.childImageSharp.fluid}
           description={'Ideation & Pitch Preparation'} />
       </div>
       <div className='mentors-info'>
@@ -141,7 +139,7 @@ const IndexPage = ({ data }) => (
         <p className='mentors-info-text basic-text'>
           These people will bootstrap your development and help you to avoid common traps in website development.
         </p>
-        <Link className='mentors-info-link' to={'/mentors'}>Meet our team</Link>
+        {/* <Link className='mentors-info-link' to={'/mentors'}>Meet our team</Link> */}
       </div>
     </div>
     <div className='application'>
@@ -198,14 +196,14 @@ export const query = graphql`
         }
       }
     }
-    kokes: file(relativePath: { eq: "kokes.jpg"}) {
+    alberto: file(relativePath: { eq: "alberto.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 304, maxHeight: 360) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    vlnas: file(relativePath: { eq: "vlnas.jpg"}) {
+    johny: file(relativePath: { eq: "johny.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 304, maxHeight: 360) {
           ...GatsbyImageSharpFluid

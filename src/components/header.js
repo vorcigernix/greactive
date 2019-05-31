@@ -26,7 +26,7 @@ export default class Header extends React.Component {
 				<nav className='header-nav'>
 					<Link className='header-nav-item' activeClassName="active" to="/about/">About</Link>
 					<Link className='header-nav-item' activeClassName="active" to="/agenda">Agenda</Link>
-					<Link className='header-nav-item' activeClassName="active" to="/mentors">Mentors</Link>
+					{/* <Link className='header-nav-item' activeClassName="active" to="/mentors">Mentors</Link> */}
 					<Link className='header-nav-item' activeClassName="active" to="/faq">FAQ</Link>
 				</nav>
 				<Link to="/" className='header-logo'>
