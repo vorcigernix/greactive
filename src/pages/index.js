@@ -36,19 +36,19 @@ const IndexPage = ({ data }) => (
       <div className='hp-intro-info'>
         <div className='hp-intro-date'>13 — 15 September 2019</div>
         <div className='hp-intro-place'>Prague, Socialbakers offices</div>
-        <div className='hp-intro-link'>Pre-register</div>
+        <a className='hp-intro-link' href="https://www.eventbrite.com/e/reactivehacks-tickets-62911838001">Pre-register</a>
       </div>
       <div className="hp-intro-numbers">
         <div className="hp-intro-numbers-box">
           <div className="hp-intro-numbers-number">3</div>
           <div className="hp-intro-numbers-title">Days</div>
         </div>
-        <div className="hp-intro-numbers-box">
-          <div className="hp-intro-numbers-number">12</div>
+        {/* <div className="hp-intro-numbers-box">
+          <div className="hp-intro-numbers-number">3</div>
           <div className="hp-intro-numbers-title">Mentors</div>
-        </div>
+        </div> */}
         <div className="hp-intro-numbers-box">
-          <div className="hp-intro-numbers-number">139</div>
+          <div className="hp-intro-numbers-number">80</div>
           <div className="hp-intro-numbers-title">Participants</div>
         </div>
         <div className="hp-intro-numbers-box">
@@ -123,6 +123,13 @@ const IndexPage = ({ data }) => (
       </TabPanel>
     </Tabs>
     <div className='mentors container'>
+      <div className='mentors-info'>
+        <h2 className='mentors-info-title section-title'>Mentors</h2>
+        <p className='mentors-info-text basic-text'>
+          These people will bootstrap your development and help you to avoid common traps in website development.
+        </p>
+        {/* <Link className='mentors-info-link' to={'/mentors'}>Meet our team</Link> */}
+      </div>
       <div className='mentors-wrapper mentors-wrapper--hp'>
         <Mentor
           name={'Alberto Silva'}
@@ -133,13 +140,10 @@ const IndexPage = ({ data }) => (
           name={'Johny Velho'}
           img={data.johny.childImageSharp.fluid}
           description={'Ideation & Pitch Preparation'} />
-      </div>
-      <div className='mentors-info'>
-        <h2 className='mentors-info-title section-title'>Mentors</h2>
-        <p className='mentors-info-text basic-text'>
-          These people will bootstrap your development and help you to avoid common traps in website development.
-        </p>
-        {/* <Link className='mentors-info-link' to={'/mentors'}>Meet our team</Link> */}
+        <Mentor
+          name={'Jan Čermák'}
+          img={data.honza.childImageSharp.fluid}
+          description={'Jan have a huge overlap in all design disciplines. Probably our best all-around designer here in Product department at Socialbakers and that means something!'} />
       </div>
     </div>
     <div className='application'>
@@ -161,7 +165,7 @@ const IndexPage = ({ data }) => (
           <p className='application-item-text basic-text'>If your review is positive, you will get a link to ticket. You need to confirm it within a 7 days limit. Capacity of a venue is limited, please consider seriously your ability to be there with us.</p>
         </div>
       </div>
-      <a className='application-link' href='#'>Pre-register</a>
+      <a className='application-link' href='https://www.eventbrite.com/e/reactivehacks-tickets-62911838001'>Pre-register</a>
     </div>
     <div className='venue container'>
       <div className='venue-img'>
@@ -204,6 +208,13 @@ export const query = graphql`
       }
     }
     johny: file(relativePath: { eq: "johny.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth: 304, maxHeight: 360) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    honza: file(relativePath: { eq: "honza.jpg"}) {
       childImageSharp {
         fluid(maxWidth: 304, maxHeight: 360) {
           ...GatsbyImageSharpFluid

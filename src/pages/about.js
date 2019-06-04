@@ -19,7 +19,7 @@ const AboutPage = ({ data }) => (
     {PageIntro('About')}
     <div className='container'>
       <p className='basic-text about-intro'>
-        Battle for the Net is a first iteration of hackathons created by ReactiveConf. Our main goal is to make an event with a positive impact on our society. We believe that technology is a great tool to help other people and every year we will aim to raise awareness about problems we see around us and turn this awareness into action. And, yes, we want to have a lot of fun too. This year, the event is created in collaboration with Socialbakers, one of most successful startups in Czech Republic.
+      Refactor the World is a first iteration of hackathons created by ReactiveConf. Our main goal is to make an event with a positive impact on our society. We believe that technology is a great tool to help other people and every year we will aim to raise awareness about problems we see around us and turn this awareness into action. And, yes, we want to have a lot of fun too. This year, the event is created in collaboration with Socialbakers, one of most successful startups in Czech Republic.
       </p>
       <div className='about-venue container'>
         <div className='about-venue-img'>

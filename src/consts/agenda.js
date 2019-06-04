@@ -3,11 +3,14 @@ import barCampsIcon from '../images/bar-camps.svg'
 import breakfastIcon from '../images/breakfast.svg'
 import chilloutIcon from '../images/chillout.svg'
 import dinnerIcon from '../images/dinner.svg'
+import expoIcon from '../images/expo.svg'
+import halftimeIcon from '../images/halftime.svg'
 import getTogetherIcon from '../images/get-together.svg'
 import ideasIcon from '../images/ideas.svg'
 import interestMeetIcon from '../images/interest-meet.svg'
 import midnightIcon from '../images/midnight.svg'
 import openingCeremonyIcon from '../images/opening-ceremony.svg'
+import preparationIcon from '../images/preparation.svg'
 import startIcon from '../images/start.svg'
 import submitIcon from '../images/submit.svg'
 import winningCeremonyIcon from '../images/winning-ceremony.svg'
@@ -87,7 +90,7 @@ export const AGENDA = {
 		{
 			time: '01:00am - 01:30am',
 			activity: 'Halftime Challenge',
-			icon: '',
+			icon: halftimeIcon,
 		},
 		{
 			time: '9:00am - 10:00am',
@@ -117,12 +120,12 @@ export const AGENDA = {
 		{
 			time: '1:45pm - 2:15pm',
 			activity: 'Preparation',
-			icon: '',
+			icon: preparationIcon,
 		},
 		{
 			time: '2:15pm - 3:00pm',
 			activity: 'Expo',
-			icon: '',
+			icon: expoIcon,
 		},
 		{
 			time: '3:15pm - 3:45pm',

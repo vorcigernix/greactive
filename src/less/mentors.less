@@ -3,24 +3,20 @@
 .mentors-wrapper {
     display: flex;
     align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
     flex: 1 1 auto;
 
     + .mentors-wrapper {
         margin-top: 120px;
     }
-
-    &:not(.mentors-wrapper--hp) {
-        .mentor + .mentor {
-            margin-left: 160px;
-        }
-    }
 }
 
 .mentors {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     max-width: 1376px;
     width: 100%;
     margin: 0 auto;
@@ -29,6 +25,7 @@
 
 .mentor {
     position: relative;
+    margin: 0 24px 64px;
     flex: 0 0 320px;
 
     &:before {
@@ -50,10 +47,6 @@
 
 .mentor--inverse .mentor-imgWrapper:before {
     background: @cl-primary;
-}
-
-.mentor + .mentor {
-    margin-left: 80px;
 }
 
 .mentor-imgWrapper {
@@ -102,8 +95,8 @@
 }
 
 .mentors-info {
-    flex: 0 0 384px;
     max-width: 100%;
+    text-align: center;
 }
 
 .mentors-info-title {
@@ -141,7 +134,6 @@
 @media screen and (max-width: 1260px) {
     .mentors {
 		flex-wrap: wrap;
-		flex-direction: column-reverse;
     }
     
     .mentors-info {
@@ -154,20 +146,6 @@
         flex-wrap: wrap;
         justify-content: space-around;
         width: 100%;
-    }
-
-    .mentor + .mentor {
-        margin-left: 0;
-    }
-
-    .mentors-wrapper {
-        .mentor + .mentor {
-            margin-left: 0;
-        }
-
-        + .mentors-wrapper {
-            margin-top: 144px;
-        }
     }
 
     .mentor {
@@ -190,10 +168,8 @@
     }
 }
 
-@media screen and (max-width: 830px) {
-	.mentors-wrapper {
-		+ .mentors-wrapper {
-			margin-top: 0;
-		}
-	}
+@media screen and (max-width: 600px) {
+    .mentor {
+        margin: 0 0 64px;
+    }
 }
