@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
       <div className='hp-intro-info'>
         <div className='hp-intro-date'>13 — 15 September 2019</div>
         <div className='hp-intro-place'>Prague, Socialbakers offices</div>
-        <a className='hp-intro-link' href="https://www.eventbrite.com/e/reactivehacks-tickets-62911838001">Pre-register</a>
+        <a className='hp-intro-link' href="https://www.eventbrite.com/e/reactivehacks-tickets-62911838001">Register</a>
       </div>
       <div className="hp-intro-numbers">
         <div className="hp-intro-numbers-box">
@@ -139,7 +139,7 @@ const IndexPage = ({ data }) => (
         <Mentor
           name={'Johny Velho'}
           img={data.johny.childImageSharp.fluid}
-          description={'Ideation & Pitch Preparation'} />
+          description={'I am a Brazilian Software Developer that crossed the ocean to learn and help a company that is betting on my potential. Everyday, both on my own and with the help of the amazing people in the company, am learning how to simplify code using best practices and the clean code paradigm. Giving and receiving knowledge to make all of us better programmers.'} />
         <Mentor
           name={'Jan Čermák'}
           img={data.honza.childImageSharp.fluid}
@@ -152,20 +152,20 @@ const IndexPage = ({ data }) => (
         <div className='application-item application-item--apply'>
           <Icon src={appProcessApplyIcon} className='application-item-background' />
           <h3 className='application-item-title'>Apply in the form</h3>
-          <p className='application-item-text basic-text'>We need to balance team abilities, be honest about your capabilities please. Applications will be closed 20th April.</p>
+          <p className='application-item-text basic-text'>We need to balance team abilities, be honest about your capabilities please.  Registration will be closed by September 12th.</p>
         </div>
         <div className='application-item application-item--process'>
           <Icon src={appProcessProcessIcon} className='application-item-background' />
           <h3 className='application-item-title'>Review process</h3>
-          <p className='application-item-text basic-text'>We will review your application with help of mentors. We will come back to you in a week with results of a review.</p>
+          <p className='application-item-text basic-text'>We will review your application with the help of mentors. We will come back to you in a week with results of a review.</p>
         </div>
         <div className='application-item application-item--ticket'>
           <Icon src={appProcessTicketIcon} className='application-item-background' />
           <h3 className='application-item-title'>Ticket</h3>
-          <p className='application-item-text basic-text'>If your review is positive, you will get a link to ticket. You need to confirm it within a 7 days limit. Capacity of a venue is limited, please consider seriously your ability to be there with us.</p>
+          <p className='application-item-text basic-text'>Your ticket will be issued by Eventbrite immediately. In case we decide that you are not a good fit to the event, we will invalidate your free ticket and you will be informed about this change by Eventbrite.</p>
         </div>
       </div>
-      <a className='application-link' href='https://www.eventbrite.com/e/reactivehacks-tickets-62911838001'>Pre-register</a>
+      <a className='application-link' href='https://www.eventbrite.com/e/reactivehacks-tickets-62911838001'>Register</a>
     </div>
     <div className='venue container'>
       <div className='venue-img'>

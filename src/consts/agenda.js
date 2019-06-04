@@ -45,7 +45,7 @@ export const AGENDA = {
 		},
 		{
 			time: '8:30pm - 12:00pm',
-			activity: 'Get-together &amp; activities',
+			activity: 'Get-together activities',
 			icon: getTogetherIcon,
 		}
 	],
