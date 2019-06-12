@@ -170,10 +170,10 @@ body {
 	padding: 0 20px;
 	max-width: 990px;
 	width: 100%;
-  font-family: 'Montserrat';
-  font-size: 23px;
-  line-height: 32px;
-  color: @cl-primary;
+	font-family: 'Montserrat';
+	font-size: 23px;
+	line-height: 32px;
+	color: @cl-primary;
 	font-weight: 700;
 	text-align: left;
 }
@@ -192,12 +192,17 @@ body {
 
 .hp-intro-link {
 	display: inline-block;
-  height: 64px;
-  width: 272px;
-  background: @cl-primary;
-  color: #000000;
-  text-align: center;
-  line-height: 64px;
+	padding: 0;
+	border: 0;
+	height: 64px;
+	width: 272px;
+	background: @cl-primary;
+	font-family: 'Montserrat';
+	font-size: 22px;
+	font-weight: 700;
+	color: #000000;
+	text-align: center;
+	line-height: 64px;
 	text-transform: uppercase;
 	transition: color .25s, background .25s;
 	cursor: pointer;
@@ -404,22 +409,23 @@ body {
 }
 
 .application-item-title {
-  margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .application-link {
-  display: inline-block;
-  margin-top: 12px;
-  border: 3px solid @cl-primary;
-  height: 64px;
-  width: 240px;
-  font-family: 'Montserrat';
-  line-height: 58px;
-  text-decoration: none;
-  text-align: center;
-  color: @cl-primary;
-  font-size: 22px;
-  font-weight: 700;
+	display: inline-block;
+	margin-top: 12px;
+	padding: 0;
+	border: 3px solid @cl-primary;
+	height: 64px;
+	width: 240px;
+	font-family: 'Montserrat';
+	line-height: 58px;
+	text-decoration: none;
+	text-align: center;
+	color: @cl-primary;
+	font-size: 22px;
+	font-weight: 700;
 	text-transform: uppercase;
 	transition: color .25s, border-color .25s;
 	
@@ -430,13 +436,13 @@ body {
 }
 
 .venue {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  margin: 240px auto 216px;
-  padding: 0 48px;
-  max-width: 1376px;
-  width: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	margin: 240px auto 216px;
+	padding: 0 48px;
+	max-width: 1376px;
+	width: 100%;
 }
 
 .venue-img {
@@ -541,7 +547,7 @@ body {
 
 @media screen and (max-width: 1100px) {
   .container {
-    padding: 0 16px;
+	padding: 0 16px;
 	}
 
 	.hp-intro {
@@ -634,7 +640,6 @@ body {
 		line-height: 32px;
 	}
 
-  
 	.hp-tabs {
 		flex-direction: column;
 		margin-top: 64px;
@@ -667,29 +672,29 @@ body {
 		display: block;
 	}
 
-  .application {
+.application {
 		margin-top: 146px;
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+	padding-left: 16px;
+	padding-right: 16px;
+}
 
-  .application-title {
-    margin-bottom: 36px;
-  }
+.application-title {
+	margin-bottom: 36px;
+}
 
-  .application-item {
-    padding-top: 36px;
-    height: 284px;
-  }
+.application-item {
+	padding-top: 36px;
+	height: 284px;
+}
 
   .application-link {
-    margin-top: 48px;
+	margin-top: 48px;
   }
 
   .venue {
-    flex-direction: column-reverse;
-    margin-top: 140px;
-    text-align: center;
+	flex-direction: column-reverse;
+	margin-top: 140px;
+	text-align: center;
 	}
 	
 	.venue-info {
@@ -697,7 +702,7 @@ body {
 	}
 
   .venue-text {
-    margin-bottom: 32px;
+	margin-bottom: 32px;
   }
 
 	.faq {
@@ -740,12 +745,12 @@ body {
 
 	.hp-intro-reactive {
 		display: block;
-    margin: 5px auto;
+	margin: 5px auto;
 	}
 
 	.hp-intro-sbks {
 		display: block;
-    margin: 5px auto;
+	margin: 5px auto;
 	}
 
 	.hp-intro-info {
@@ -780,10 +785,10 @@ body {
 	}
 
 	.venue-img {
-    margin-top: 48px;
-    margin-left: -16px;
-    margin-right: -16px;
-    max-width: calc(100% + 32px);
-    width: calc(100% + 32px);
+	margin-top: 48px;
+	margin-left: -16px;
+	margin-right: -16px;
+	max-width: calc(100% + 32px);
+	width: calc(100% + 32px);
 	}
 }
