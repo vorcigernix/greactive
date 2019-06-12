@@ -165,7 +165,7 @@ const IndexPage = ({ data }) => (
           <p className='application-item-text basic-text'>Your ticket will be issued by Eventbrite immediately. In case we decide that you are not a good fit to the event, we will invalidate your free ticket and you will be informed about this change by Eventbrite.</p>
         </div>
       </div>
-      <a className='application-link' href='https://www.eventbrite.com/e/reactivehacks-tickets-62911838001'>Register</a>
+      <button id="eventbrite-widget-modal-trigger-62911838001" type="button"className='application-link'>Register</button>
     </div>
     <div className='venue container'>
       <div className='venue-img'>

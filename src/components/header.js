@@ -32,7 +32,7 @@ export default class Header extends React.Component {
 				<Link to="/" className='header-logo'>
 					<Icon src={headerLogoIcon} className='header-logo-icon' />
 				</Link>
-				<a className='header-preorder' href="https://www.eventbrite.com/e/reactivehacks-tickets-62911838001">Register</a>
+				<button id="eventbrite-widget-modal-trigger-62911838001" type="button" className='header-preorder'>Register</button>
 				<div className={classnames('m-header-hamburger', {'isOpen': this.state.menuOpen})} onClick={this.handleHamburgerClick.bind(this)}>
 					<div className='m-header-hamburger-inner' />
 				</div>
