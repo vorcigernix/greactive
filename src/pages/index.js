@@ -36,7 +36,7 @@ const IndexPage = ({ data }) => (
       <div className='hp-intro-info'>
         <div className='hp-intro-date'>13 — 15 September 2019</div>
         <div className='hp-intro-place'>Prague, Socialbakers offices</div>
-        <a className='hp-intro-link' href="https://www.eventbrite.com/e/reactivehacks-tickets-62911838001">Register</a>
+        <button id="eventbrite-widget-modal-trigger-62911838001" type="button" className='hp-intro-link'>Register</button>
       </div>
       <div className="hp-intro-numbers">
         <div className="hp-intro-numbers-box">
